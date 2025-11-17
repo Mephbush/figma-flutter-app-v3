@@ -60,8 +60,8 @@ jobs:
     - name: Verify Gradle Wrapper
       working-directory: android
       run: |
-        chmod +x gradlew
-        ./gradlew --version
+        chmod +x gradleew
+        ./gradleew --version
         
     - name: Clean Flutter Build
       run: flutter clean
