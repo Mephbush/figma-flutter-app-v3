@@ -58,6 +58,7 @@ jobs:
       run: flutter pub get
 
     - name: Generate Gradle Wrapper (if missing)
+      working-directory: android
       run: gradle wrapper
       
     - name: Verify Gradle Wrapper
