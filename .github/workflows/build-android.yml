@@ -55,29 +55,24 @@ jobs:
       run: flutter doctor -v
       
     - name: Get Flutter Dependencies
-      working-directory: flutter_app
       run: flutter pub get
       
     - name: Verify Gradle Wrapper
-      working-directory: flutter_app/android
+      working-directory: android
       run: |
         chmod +x gradlew
         ./gradlew --version
         
     - name: Clean Flutter Build
-      working-directory: flutter_app
       run: flutter clean
       
     - name: Build APK (Debug)
-      working-directory: flutter_app
       run: flutter build apk --debug
       
     - name: Build APK (Release)
-      working-directory: flutter_app
       run: flutter build apk --release
       
     - name: Build App Bundle (Release)
-      working-directory: flutter_app
       run: flutter build appbundle --release
       
     - name: Upload Debug APK
