@@ -1,0 +1,11 @@
+# This is a placeholder for gradle-wrapper.jar
+# The actual JAR file will be downloaded automatically when you run gradlew
+# 
+# If you need to regenerate this file, run:
+# gradle wrapper --gradle-version 8.7
+#
+# Or download it from:
+# https://github.com/gradle/gradle/blob/master/gradle/wrapper/gradle-wrapper.jar
+#
+# Note: This is a binary file placeholder. The actual gradle-wrapper.jar
+# will be automatically downloaded when Flutter builds the project for the first time.
